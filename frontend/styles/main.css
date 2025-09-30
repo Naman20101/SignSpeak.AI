@@ -1,0 +1,164 @@
+/* Main CSS styles for SignSpeak.AI */
+
+:root {
+    --primary: #7c3aed;
+    --primary-dark: #6d28d9;
+    --primary-light: #8b5cf6;
+    --secondary: #06d6a0;
+    --secondary-dark: #05b183;
+    --accent: #ff6b6b;
+    --dark: #0f0f23;
+    --darker: #0a0a16;
+    --darkest: #05050c;
+    --light: #f8f9fa;
+    --gray: #6c757d;
+}
+
+/* Custom Streamlit styling */
+.stApp {
+    background: linear-gradient(135deg, var(--darkest), var(--darker));
+    color: var(--light);
+}
+
+.main .block-container {
+    padding-top: 2rem;
+    max-width: 1200px;
+}
+
+/* Custom button styles */
+.stButton > button {
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+}
+
+/* Primary button */
+.stButton > button[kind="primary"] {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    border: none;
+}
+
+.stButton > button[kind="primary"]:hover {
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.4);
+}
+
+/* Secondary button */
+.stButton > button[kind="secondary"] {
+    background: transparent;
+    border: 2px solid var(--secondary);
+    color: var(--secondary);
+}
+
+.stButton > button[kind="secondary"]:hover {
+    background: var(--secondary);
+    color: var(--dark);
+    box-shadow: 0 8px 20px rgba(6, 214, 160, 0.4);
+}
+
+/* Custom metric styling */
+[data-testid="metric-container"] {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+/* Sidebar styling */
+.css-1d391kg {
+    background: linear-gradient(180deg, var(--dark), var(--darker));
+}
+
+/* Progress bar styling */
+.stProgress > div > div > div {
+    background: linear-gradient(90deg, var(--secondary), var(--primary));
+}
+
+/* Success message styling */
+.stAlert > div[data-baseweb="notification"] {
+    background: rgba(6, 214, 160, 0.1);
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+}
+
+/* Info message styling */
+.stAlert > div[data-baseweb="notification"].stInfo {
+    background: rgba(124, 58, 237, 0.1);
+    border: 1px solid var(--primary);
+    color: var(--primary-light);
+}
+
+/* Warning message styling */
+.stAlert > div[data-baseweb="notification"].stWarning {
+    background: rgba(255, 107, 107, 0.1);
+    border: 1px solid var(--accent);
+    color: var(--accent);
+}
+
+/* Expander styling */
+.streamlit-expanderHeader {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* Selectbox styling */
+.stSelectbox > div > div {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Slider styling */
+.stSlider > div > div > div {
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+}
+
+/* Text input styling */
+.stTextInput > div > div > input {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--light);
+}
+
+.stTextArea > div > div > textarea {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--light);
+}
+
+/* Radio button styling */
+.stRadio > div {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+/* Camera input styling */
+.stCameraInput > div {
+    border: 2px solid rgba(124, 58, 237, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Tab styling */
+.stTabs [data-baseweb="tab-list"] {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    gap: 2px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    background: transparent;
+    border-radius: 8px;
+    color: var(--gray);
+}
+
+.stTabs [aria-selected="true"] {
+    background: var(--primary);
+    color: var(--light);
+}
