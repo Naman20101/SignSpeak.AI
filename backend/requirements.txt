@@ -1,0 +1,16 @@
+fastapi==0.104.1
+uvicorn==0.24.0
+websockets==12.0
+python-multipart==0.0.6
+mediapipe==0.10.0
+opencv-python==4.8.1.78
+tensorflow==2.13.0
+torch==2.0.1
+numpy==1.24.3
+pandas==2.0.3
+pillow==10.0.1
+pyttsx3==2.90
+coqui-tts==0.20.1
+soundfile==0.12.1
+python-dotenv==1.0.0
+redis==5.0.1
